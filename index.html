@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>SheCodes Poem Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
@@ -12,14 +13,17 @@
         <h1>AI Poem Generator</h1>
         <main>
     </header>
-    <form>
-        <input type="text" placeholder="Enter the topic of your poem" autofocus required autocomplete="off" class="instructions">
+    <form id="poem-generator-form">
+        <input 
+        type="text" 
+        placeholder="Enter the topic of your poem" 
+        autofocus 
+        required 
+        autocomplete="off" 
+        class="instructions">
         <input type="submit" class="submit-button">
     </form>
-    <div class="poem">
-        The poem will go here
-        <br>
-        And here
+    <div class="poem" id="poem">
     </div>
 </main>
     <footer>This product was coded by Viktória Keserű and is <a href="https://github.com/kesviki/shecodes-poem-generator" target="_blank">open-sourced on GitHub</a> and is <a href="https://shecodes-ai-poem-generator.netlify.app" target="_blank">hosted on Netlify</a></footer>
