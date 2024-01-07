@@ -56,6 +56,7 @@ form {
 
 .poem {
     font-size: 16px;
+    font-style: italic;
     background-color: white;
     color: #333D51;
     padding: 20px;
