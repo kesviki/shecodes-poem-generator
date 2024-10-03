@@ -80,6 +80,16 @@ form {
     display: none;
 }
 
+@keyframes blink {
+    to { 
+        visibility: hidden;
+ }
+}
+
+.generating {
+    animation: blink 1s steps(3, start) infinite;
+}
+
 footer {
     text-align: center;
     font-size: 13px;

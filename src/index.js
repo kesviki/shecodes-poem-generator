@@ -9,7 +9,7 @@ function generatePoem(event) {
       "you are a professional poet who can write a poem based on any prompt in basic HTMl. Do not include a title for the poem. Make sure to follow the instructions"
        let prompt = `write a four line long poem about ${instructionsInput.value}`;
     let poemProgress = document.querySelector("#poem");
-    poemProgress.innerHTML = `Your poem about ${instructionsInput.value} is being generated`;
+    poemProgress.innerHTML = `<div class="generating">Your poem about ${instructionsInput.value} is being generated</div>`;
 
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
     axios.get(apiUrl).then(typePoem);
